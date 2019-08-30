@@ -111,14 +111,14 @@ $(document).ready(function () {
         navText: ["<i class='fas fa-chevron-right'></i>", "<i class='fas fa-chevron-left'></i>"],
         responsive: {
             0: {
-                dots: false,
+                nav: false,
             },
             500: {
-                dots: false,
+                nav: false,
 
             },
             768: {
-                 dots: true,
+                nav: true,
             },
         }
     });
