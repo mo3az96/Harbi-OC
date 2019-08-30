@@ -67,6 +67,9 @@ html[dir="ltr"] .banners {
         margin-left: 0;
         margin-right: 17px;
 
+        @media (max-width:767px) {
+            margin-right: 0;
+        }
 
         &:last-child {
             margin-left: 0;

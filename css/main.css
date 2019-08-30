@@ -975,7 +975,7 @@ html[dir=ltr] .slider {
 }
 
 .product .item-img {
-  width: 212px;
+  width: 100%;
   height: 212px;
   border: 1px solid #f2f2f2;
   display: flex;
@@ -1027,7 +1027,7 @@ html[dir=ltr] .slider {
   z-index: 9;
 }
 .product .info {
-  width: 212px;
+  width: 100%;
 }
 @media (max-width: 767px) {
   .product .info {
@@ -1081,7 +1081,7 @@ html[dir=ltr] .product .info {
   background-image: -moz-linear-gradient(90deg, white 0%, #ededed 100%);
   background-image: -webkit-linear-gradient(90deg, white 0%, #ededed 100%);
   background-image: -ms-linear-gradient(90deg, white 0%, #ededed 100%);
-  width: 255px;
+  width: 100%;
   height: 324px;
   display: flex;
   flex-direction: column;
@@ -1156,7 +1156,7 @@ html[dir=ltr] .product .info {
   padding: 0 15px;
   border: 1px solid #f2f2f2;
   background-color: #ffffff;
-  width: 159px;
+  width: 100%;
   height: 159px;
   display: flex;
   align-items: center;
@@ -1670,6 +1670,11 @@ html[dir=ltr] .banners .banner {
   margin-left: 0;
   margin-right: 17px;
 }
+@media (max-width: 767px) {
+  html[dir=ltr] .banners .banner {
+    margin-right: 0;
+  }
+}
 html[dir=ltr] .banners .banner:last-child {
   margin-left: 0;
   margin-right: 0;
@@ -1682,6 +1687,11 @@ html[dir=ltr] .banners .banner:last-child {
   position: relative;
   padding-top: 60px;
   margin-top: 66px;
+}
+@media (max-width: 767px) {
+  .footer-sec {
+    padding-top: 40px;
+  }
 }
 
 .linksheading {
@@ -1710,7 +1720,7 @@ html[dir=ltr] .banners .banner:last-child {
 }
 @media (max-width: 767px) {
   .footer .foot-logo {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }
 }
 .footer .foot-nav {
@@ -1769,6 +1779,11 @@ html[dir=ltr] .footer .foot-nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .sec-footer {
+    margin-top: 40px;
   }
 }
 

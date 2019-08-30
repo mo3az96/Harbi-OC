@@ -5,6 +5,10 @@
     position: relative;
     padding-top: 60px;
     margin-top: 66px;
+
+    @media (max-width:767px) {
+        padding-top: 40px;
+    }
 }
 
 .linksheading {
@@ -30,7 +34,7 @@
         }
 
         @media (max-width:767px) {
-            margin-bottom: 25px;
+            margin-bottom: 40px;
         }
     }
 
@@ -94,6 +98,10 @@ html[dir="ltr"] .footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    @media (max-width:767px) {
+        margin-top: 40px;
     }
 }
 
