@@ -1,0 +1,119 @@
+.last-bar {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    position: relative;
+    @include transition(all 0.3s ease-in-out);
+
+    @media (max-width:991px) {
+        display: none;
+    }
+
+    .specials-btn {
+        padding-left: 24px;
+        padding-right: 23px;
+        height: 100%;
+        background-color: $seccolor;
+        line-height: 40px;
+        font-size: 15px;
+        color: #fff;
+        margin-left: 14px;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $thirdcolor;
+        }
+
+        @media (max-width:1199px) {
+            display: none;
+        }
+    }
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        @media (max-width:1199px) {
+            width: 100%;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    .link-li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .link {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        color: $thirdcolor;
+        font-size: 15px;
+        @include transition(all 0.3s ease-in-out);
+        padding-left: 13px;
+        padding-right: 12px;
+
+        &:hover {
+            color: $seccolor;
+        }
+
+        @media (max-width:1199px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .megamenu-link {
+        position: relative;
+        @include transition(all 0.5s ease-in-out);
+
+        &:before {
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: $seccolor;
+            position: absolute;
+            top: 0;
+            right: 0;
+            @include transition(all 0.5s ease-in-out);
+        }
+    }
+}
+
+html[dir="ltr"] .last-bar {
+
+    .specials-btn {
+        padding-left: 23px;
+        padding-right: 24px;
+        margin-right: 14px;
+        margin-left: 0;
+    }
+
+
+
+    .link {
+        padding-left: 12px;
+        padding-right: 13px;
+
+        @media (max-width:1199px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .megamenu-link {
+        position: relative;
+        @include transition(all 0.5s ease-in-out);
+
+        &:before {
+            right: auto;
+            left: 0;
+        }
+    }
+
+}

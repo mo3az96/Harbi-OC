@@ -1,0 +1,222 @@
+.header {
+    position: fixed;
+    box-shadow: 0px 0px 8px 0px rgba(22, 22, 22, 0.1);
+    background-color: #fff;
+    // right: 50%;
+    top: 0;
+    // transform: translateX(50%);
+    width: 100%;
+    z-index: 20;
+}
+
+.top-bar {
+    background-color: $maincolor;
+    height: 36px;
+    width: 100%;
+    @include transition(all 0.3s ease-in-out);
+
+    .top-bar-cont {
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .services {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .service {
+        font-size: 13px;
+        color: #fff;
+        margin-left: 24px;
+
+        img {
+            margin-left: 10px;
+        }
+    }
+
+    .lang {
+        font-size: 13px;
+        color: #fff;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $thirdcolor;
+        }
+    }
+
+    @media (max-width:767px) {
+        display: none;
+    }
+}
+
+html[dir="ltr"] .top-bar {
+
+    .service {
+        margin-left: 0;
+        margin-right: 24px;
+
+        img {
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+}
+
+.sec-bar {
+    padding: 16px 0 15px;
+    border: 1px solid #f4f4f4;
+    position: relative;
+    z-index: 9991;
+    background-color: #fff;
+
+    .sec-bar-cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-cont {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-btn {
+        font-size: 18px;
+        color: $thirdcolor;
+        cursor: pointer;
+        margin-left: 12px;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $seccolor;
+        }
+    }
+
+    .user-nav-btns {
+        display: flex;
+        align-items: center;
+    }
+
+    .user-nav-anchors {
+        color: $thirdcolor;
+        font-size: 14px;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $seccolor;
+        }
+
+        @media (max-width:767px) {
+            font-size: 20px;
+        }
+    }
+
+    .search-btn {
+        display: none;
+
+        @media (max-width:767px) {
+            display: block;
+            margin: 0 24px;
+        }
+    }
+
+    .user-ico {
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+
+        i {
+            margin-left: 9px;
+        }
+
+        @media (max-width:991px) {
+            p {
+                display: none;
+            }
+        }
+    }
+
+    .cart-ico {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        border: 1px solid #eeeeee;
+        @include transition(all 0.3s ease-in-out);
+        position: relative;
+
+        &:hover {
+            border: 1px solid $maincolor;
+
+            .count {
+                animation: vibe 0.7s ease forwards;
+            }
+        }
+    }
+
+    .count {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $seccolor;
+        font-size: 12px;
+        color: #fff;
+    }
+}
+
+html[dir="ltr"] .sec-bar {
+    .menu-btn {
+        margin-left: 0;
+        margin-right: 12px;
+    }
+
+    .user-ico {
+        margin-left: 0;
+        margin-right: 15px;
+
+        i {
+            margin-right: 9px;
+            margin-left: 0;
+        }
+    }
+}
+
+
+
+.mega-active {
+    background-color: #f7f7f7;
+    color: $seccolor !important;
+
+    &:before {
+        width: 100% !important;
+    }
+}
+
+html[dir="ltr"] .last-bar {
+    .specials-btn {
+        padding-left: 23px;
+        padding-right: 24px;
+        margin-left: 0;
+        margin-right: 14px;
+    }
+
+    .link {
+        padding-left: 12px;
+        padding-right: 13px;
+
+
+    }
+
+}
