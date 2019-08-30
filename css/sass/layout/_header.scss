@@ -77,11 +77,19 @@ html[dir="ltr"] .top-bar {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width:350px) {
+            flex-direction: column;
+        }
     }
 
     .logo-cont {
         display: flex;
         align-items: center;
+
+        @media (max-width:350px) {
+            margin-bottom: 15px;
+        }
     }
 
     .menu-btn {
