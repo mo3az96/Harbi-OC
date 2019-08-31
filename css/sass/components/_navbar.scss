@@ -67,22 +67,6 @@
             padding-right: 0;
         }
     }
-
-    .megamenu-link {
-        position: relative;
-        @include transition(all 0.5s ease-in-out);
-
-        &:before {
-            content: "";
-            width: 0;
-            height: 2px;
-            background-color: $seccolor;
-            position: absolute;
-            top: 0;
-            right: 0;
-            @include transition(all 0.5s ease-in-out);
-        }
-    }
 }
 
 html[dir="ltr"] .last-bar {

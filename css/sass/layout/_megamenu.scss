@@ -1,8 +1,44 @@
+.mega-li {
+    .megamenu-link {
+        position: relative;
+        @include transition(all 0.5s ease-in-out);
+
+        &:before {
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: $seccolor;
+            position: absolute;
+            top: 0;
+            right: 0;
+            @include transition(all 0.5s ease-in-out);
+        }
+
+    }
+
+    &:hover {
+        .megamenu-link {
+            background-color: #f7f7f7;
+            color: $seccolor !important;
+
+            &:before {
+                width: 100% !important;
+            }
+        }
+
+        .megamenu {
+            z-index: 9;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
 .megamenu {
     position: absolute;
     width: 100%;
     right: 0;
-    top: 217px;
+    top: 44px;
     background-color: #f7f7f7;
     padding-top: 36px;
     padding-bottom: 30px;
@@ -39,9 +75,11 @@
 
         .link-li {
             margin-bottom: 9px;
+            height: auto;
         }
 
         .link {
+            padding: 0;
             font-size: 15px;
             color: $thirdcolor;
             @include transition(all 0.3s ease-in-out);

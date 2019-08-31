@@ -204,67 +204,6 @@ html[dir=ltr] .body-out {
   animation: body-out-en 0.5s ease forwards;
 }
 
-@keyframes mega-in {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-    z-index: -1;
-  }
-  100% {
-    opacity: 1;
-    visibility: visible;
-    z-index: 9;
-  }
-}
-.mega-in {
-  animation: mega-in 0.7s ease forwards;
-}
-
-@keyframes mega-out {
-  0% {
-    opacity: 1;
-    visibility: visible;
-    z-index: 9;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-    display: none;
-    z-index: -1;
-  }
-}
-.mega-out {
-  animation: mega-out 0.3s ease forwards;
-}
-
-@keyframes mega-in-en {
-  0% {
-    display: flex;
-    left: -100%;
-  }
-  100% {
-    left: 0;
-  }
-}
-html[dir=ltr] .mega-in {
-  animation: mega-in-en 0.5s ease forwards;
-}
-
-@keyframes mega-out-en {
-  0% {
-    left: 0;
-  }
-  99% {
-    left: -100%;
-  }
-  100% {
-    display: none;
-  }
-}
-html[dir=ltr] .mega-out {
-  animation: mega-out-en 0.5s ease forwards;
-}
-
 html {
   overflow-x: hidden;
 }
@@ -639,26 +578,6 @@ html[dir=ltr] .news-btn {
     padding-left: 0;
     padding-right: 0;
   }
-}
-.last-bar .megamenu-link {
-  position: relative;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-.last-bar .megamenu-link:before {
-  content: "";
-  width: 0;
-  height: 2px;
-  background-color: #f12f2f;
-  position: absolute;
-  top: 0;
-  right: 0;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 html[dir=ltr] .last-bar .specials-btn {
@@ -1443,14 +1362,6 @@ html[dir=ltr] .sec-bar .user-ico i {
   margin-left: 0;
 }
 
-.mega-active {
-  background-color: #f7f7f7;
-  color: #f12f2f !important;
-}
-.mega-active:before {
-  width: 100% !important;
-}
-
 html[dir=ltr] .last-bar .specials-btn {
   padding-left: 23px;
   padding-right: 24px;
@@ -1541,11 +1452,44 @@ html[dir=ltr] .last-bar .link {
   color: #fff;
 }
 
+.mega-li .megamenu-link {
+  position: relative;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.mega-li .megamenu-link:before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #f12f2f;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.mega-li:hover .megamenu-link {
+  background-color: #f7f7f7;
+  color: #f12f2f !important;
+}
+.mega-li:hover .megamenu-link:before {
+  width: 100% !important;
+}
+.mega-li:hover .megamenu {
+  z-index: 9;
+  visibility: visible;
+  opacity: 1;
+}
+
 .megamenu {
   position: absolute;
   width: 100%;
   right: 0;
-  top: 217px;
+  top: 44px;
   background-color: #f7f7f7;
   padding-top: 36px;
   padding-bottom: 30px;
@@ -1586,8 +1530,10 @@ html[dir=ltr] .last-bar .link {
 }
 .megamenu .mega-links .link-li {
   margin-bottom: 9px;
+  height: auto;
 }
 .megamenu .mega-links .link {
+  padding: 0;
   font-size: 15px;
   color: #3c3c3c;
   -moz-transition: all 0.3s ease-in-out;
@@ -1840,6 +1786,7 @@ html[dir=ltr] .footer .foot-nav {
 }
 .social .social-link:hover {
   animation: vibe 0.7s ease forwards;
+  color: #fff;
 }
 .social .social-link:nth-of-type(1) {
   background-color: #32ba23;

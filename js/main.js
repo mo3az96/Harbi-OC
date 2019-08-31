@@ -29,29 +29,6 @@ $(document).ready(function () {
         e.stopPropagation();
     });
     ////////////////////////////////////////////////////////////
-    //megamenu
-    $(".megamenu-link").hover(function () {
-        $('.megamenu-link').addClass('mega-active');
-        $('.megamenu').addClass("mega-in");
-        $('.megamenu').removeClass("mega-out");
-    }, function () {
-        $('.megamenu-link').removeClass('mega-active');
-        $('.megamenu').removeClass("mega-in");
-        $('.megamenu').addClass("mega-out");
-    });
-
-    $(".megamenu").hover(function () {
-        $('.megamenu-link').addClass('mega-active');
-        $('.megamenu').addClass("mega-in");
-        $('.megamenu').removeClass("mega-out");
-
-
-    }, function () {
-        $('.megamenu-link').removeClass('mega-active');
-        $('.megamenu').removeClass("mega-in");
-        $('.megamenu').addClass("mega-out");
-    });
-    ////////////////////////////////////////////////////////////
     // search
     // Mobile Search 
     $('.search-btn').click(function () {
