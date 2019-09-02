@@ -95,13 +95,13 @@ $(document).ready(function () {
             },
         }
     });
-    if ($(window).width() >= 768) {
-        setTimeout(function () {
+
+    setTimeout(function () {
+        if ($(window).width() >= 768) {
             var x = $(".main-slider").height()
             $(".main-banner").height(x);
-        }, 6000);
-    }
-
+        }
+    }, 2000);
 
     ////////////////////////////////////////////////////////////
     // Product Slider
