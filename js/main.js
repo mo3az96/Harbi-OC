@@ -100,7 +100,7 @@ $(document).ready(function () {
             var x = $(".main-slider").height()
             $(".main-banner").height(x);
         }
-    }, 500);
+    }, 1000);
 
     ////////////////////////////////////////////////////////////
     // Product Slider
