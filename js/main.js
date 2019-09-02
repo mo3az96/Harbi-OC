@@ -99,7 +99,7 @@ $(document).ready(function () {
         setTimeout(function () {
             var x = $(".main-slider").height()
             $(".main-banner").height(x);
-        }, 1000);
+        }, 6000);
     }
 
 
