@@ -96,8 +96,8 @@ $(document).ready(function () {
         }
     });
     if ($(window).width() >= 768) {
-        var x = $(".main-slider").height()
         setTimeout(function () {
+            var x = $(".main-slider").height()
             $(".main-banner").height(x);
         }, 1000);
     }
