@@ -101,7 +101,7 @@ $(document).ready(function () {
             var x = $(".main-slider").height()
             $(".main-banner").height(x);
         }
-    }, 1500);
+    }, 500);
 
     ////////////////////////////////////////////////////////////
     // Product Slider
