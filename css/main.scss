@@ -16,3 +16,27 @@
 @import 'sass/layout/megamenu';
 @import 'sass/pages/home';
 @import 'sass/layout/footer';
+
+.cart-side {
+    width: 260px;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 9999;
+    cursor: pointer;
+    display: none;
+}
+
+.cart-over {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: $maincolor;
+    opacity: 0.3;
+    z-index: 10;
+}
